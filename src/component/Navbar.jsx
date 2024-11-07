@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white'>
-      <Container ClassName='py-8 px-3 flex relative items-center md:justify-center justify-end gap-5 md:gap-0'>
+      <Container className='py-8 px-3 flex relative items-center md:justify-center justify-end gap-5 md:gap-0'>
         <Image ClassName='absolute left-0 top-1/2 -translate-y-1/2' href='/' src={logo}/>
    {
     show && (

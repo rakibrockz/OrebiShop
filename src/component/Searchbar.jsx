@@ -10,6 +10,7 @@ import { FaSearch } from "react-icons/fa";
 import Li from "./Li";
 import { IoClose } from "react-icons/io5";
 import Button from "./layer/Button";
+import product3 from '../../public/HomeProducts/p3.png'
 
 const Searchbar = () => {
   let [show, setShow] = useState(false);
@@ -17,7 +18,7 @@ const Searchbar = () => {
   let [account, setAccount] = useState(false);
   return (
     <div className="bg-[#F5F5F3] py-3 md:py-6">
-      <Container ClassName="relative flex justify-between px-3 md:px-0 gap-3 md:gap-0 ">
+      <Container className="relative flex justify-between px-3 md:px-0 gap-3 md:gap-0 ">
         <div
           onClick={() => setShow(!show)}
           className="category flex items-center gap-2.5"
@@ -358,7 +359,8 @@ const Searchbar = () => {
           <div className="cart w-[360px]  absolute right-0 top-full z-10">
             <div className="top border flex justify-between items-center p-5 bg-[#f5f5f3]">
               <div className="image flex gap-5 items-center ">
-                <img className="w-20 h-20 bg-[#D8D8D8]" src="" alt="" />
+                <img className="w-20 h-20 bg-[#D8D8D8]" src={product3} alt="" />
+                
                 <div className="text">
                   <p className="name">Black Smart Watch</p>
                   <p className="price">44.00$</p>

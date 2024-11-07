@@ -12,7 +12,7 @@ const SaleOffer = () => {
 
   return (
     <div className='my-5 md:my-32'>
-        <Container ClassName='md:h-[780px] gap-5 grid grid-cols-2 grid-rows-2'>
+        <Container className='md:h-[780px] gap-5 grid grid-cols-2 grid-rows-2'>
 
         <img onClick={()=> navigate("/product")} className=' cursor-pointer w-full h-full object-contain row-span-2' src={ad1} alt="" />
         <img onClick={()=> navigate("/product")} className=' cursor-pointer w-full h-full object-contain ' src={ad2} alt="" />
