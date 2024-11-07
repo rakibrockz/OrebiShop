@@ -6,7 +6,7 @@ import { GiReturnArrow } from "react-icons/gi";
 
 const Shipping = () => {
   return (
-    <div className='mt-2 font-dm flex text-[8px] gap-x-12 justify-center  md:text-[16px] md:gap-x-[535px] md:justify-center py-4  md:py-[30px] border-b-[1px] md:border-b-2 border-[#F0F0F0]'>
+    <div className='mt-2 font-dm flex text-[8px] gap-x-12 justify-center  md:text-[16px] md:justify-center py-4  md:py-[30px] lg:gap-x-[200px] xl:gap-x-[535px] border-b-[1px] md:border-b-2 border-[#F0F0F0]'>
       <div className='flex items-center gap-x-2 md:gap-x-4 '>
         <RiNumber2 /> 
       <p>Two years warranty</p>

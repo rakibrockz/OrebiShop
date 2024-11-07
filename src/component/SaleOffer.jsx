@@ -12,11 +12,11 @@ const SaleOffer = () => {
 
   return (
     <div className='my-5 md:my-32'>
-        <Container className='md:h-[780px] gap-5 grid grid-cols-2 grid-rows-2'>
+        <Container className='lg:h-[780px]  lg:gap-5 lg:grid lg:grid-cols-2 lg:grid-rows-2 md:grid md:grid-cols-2 md:grid-rows-2  md:gap-5  '>
 
-        <img onClick={()=> navigate("/product")} className=' cursor-pointer w-full h-full object-contain row-span-2' src={ad1} alt="" />
-        <img onClick={()=> navigate("/product")} className=' cursor-pointer w-full h-full object-contain ' src={ad2} alt="" />
-        <img onClick={()=> navigate("/product")} className='cursor-pointer w-full h-full object-contain ' src={ad3} alt="" />
+        <img onClick={()=> navigate("/product")} className=' cursor-pointer w-full h-full object-contain row-span-2 mb-5 lg:mb-0' src={ad1} alt="" />
+        <img onClick={()=> navigate("/product")} className=' cursor-pointer w-full h-full object-contain mb-5 lg:mb-0  ' src={ad2} alt="" />
+        <img onClick={()=> navigate("/product")} className='cursor-pointer w-full h-full object-contain  mb-5 lg:mb-0' src={ad3} alt="" />
 
 
         </Container>

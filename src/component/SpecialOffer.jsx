@@ -7,93 +7,53 @@ import product1 from "/HomeProducts/plushie.png";
 import product2 from "/HomeProducts/p2.png";
 import product3 from "/HomeProducts/p3.png";
 import product4 from "/HomeProducts/p4.png";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
-
-const Arrivals = () => {
-
-  
-  function SampleNextArrow(props) {
-    const {  style, onClick } = props;
-    return (
-      <div
-        className='absolute right-7 top-1/2 -translate-y-1/2 translate-x-1/2  md:w-16 md:h-16 w-9 h-9 rounded-full items-center justify-center'
-        style={{ ...style, display: "flex", background: "#979797" }}
-        onClick={onClick}
-      >
-        <div className="">
-        <FaLongArrowAltRight className="text-white" />
-
-        </div>
-      </div>
-    );
-  }
-  
-  function SamplePrevArrow(props) {
-    const {  style, onClick } = props;
-    return (
-      <div
-        className='  absolute left-0 top-1/2 -translate-y-1/2 md:w-16 md:h-16 w-9 h-9 rounded-full items-center justify-center z-10'
-        style={{ ...style,
-           display: "flex",
-           background: "#979797" }}
-        onClick={onClick}
-      >
-        <div>
-        <FaLongArrowAltLeft className="text-white" />
-
-        </div>
-      </div>
-    );
-  }
-
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: false,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          dots: false,
-          arrows:false,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots:false,
-        }
-      }
-    ]
-    
-  };
+const SpecialOffer = () => {
+    var settings = {
+        dots: false,
+        arrows:false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2,
+              dots: false,
+              arrows:false,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots:false,
+            }
+          }
+        ]
+        
+      };
   return (
     <>
-      
-      <Container  >
+       <Container className='pt-[119px] ' >
       <TitleHeader
           className="text-[20px] md:text-[39px] mb-[48px]"
-          headText="New Arrivals"
+          headText="Best Seller"
         />
         
         <div className="flex flex-col gap-10">
@@ -170,7 +130,7 @@ const Arrivals = () => {
         </div>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Arrivals;
+export default SpecialOffer

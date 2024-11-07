@@ -19,11 +19,11 @@ const Productitem = ({ pname, pprice, pdetails, src, oprice, OfferEye }) => {
   let [offerShow , setOfferShow] = useState(OfferEye)
 
   return (
-    <div className=" w-[370px]">
-      <div className="image w-full h-[370px] bg-slate-300 relative group">
+    <div className=" px-2.5 md:px-4 lg:px-5 ">
+      <div className="imagew-[370px] h-[370px] bg-slate-300 relative group">
         <img className="w-full h-full object-cover" src={src} alt="" />
         <div className="overlay absolute left-0 bottom-0 w-full px-7 py-6 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 cursor-pointer">
             <Li
               name="Add to Wish List"
               icon={<FaHeart className="text-primary" />}

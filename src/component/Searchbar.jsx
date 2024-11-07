@@ -21,7 +21,7 @@ const Searchbar = () => {
       <Container className="relative flex justify-between px-3 md:px-0 gap-3 md:gap-0 ">
         <div
           onClick={() => setShow(!show)}
-          className="category flex items-center gap-2.5"
+          className="category flex items-center  md:gap-3 lg:gap-2.5"
         >
           <FaBarsProgress />
           <p className="hidden md:block"> Shop By Category</p>
@@ -345,7 +345,7 @@ const Searchbar = () => {
           />
           <FaSearch className="absolute md:right-5 right-3 top-1/2 -translate-y-1/2" />
         </div>
-        <div className="account  items-center gap-10 hidden md:flex z-10">
+        <div className="account  items-center md:gap-2 lg:gap-10 hidden md:flex z-10">
           <div onClick={()=> setAccount (!account)}  className="left flex items-center">
             <FaUser />
             <FaCaretDown />
